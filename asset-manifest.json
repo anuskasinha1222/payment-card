@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/anuskasinha1222/payment-card.git/static/css/main.c7ec3132.css",
+    "main.js": "/anuskasinha1222/payment-card.git/static/js/main.08e2f6c8.js",
+    "index.html": "/anuskasinha1222/payment-card.git/index.html",
+    "main.c7ec3132.css.map": "/anuskasinha1222/payment-card.git/static/css/main.c7ec3132.css.map",
+    "main.08e2f6c8.js.map": "/anuskasinha1222/payment-card.git/static/js/main.08e2f6c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7ec3132.css",
+    "static/js/main.08e2f6c8.js"
+  ]
+}
