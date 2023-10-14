@@ -215,3 +215,56 @@ img{
   flex: 4;
 }
 
+//triangle
+// import React from 'react';
+
+// const Circle = () => {
+//   return <div className="circle"></div>;
+// };
+
+// const Triangle = () => {
+//   const numRows = 10; // Number of rows for the triangle
+//   const circlesPerRow = [1,2,3, 4, 5, 6, 7, 8, 9, 10,10,9,8,7,6,5,4,3,2,1]; // Circles for each row
+
+//   return (
+//     <div className="triangle">
+//       {circlesPerRow.map((count, rowIndex) => (
+//         <div key={rowIndex} className="row">
+//           {[...Array(count)].map((_, circleIndex) => (
+//             <Circle key={circleIndex} />
+//           ))}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Triangle;
+import React from 'react';
+
+const Circle = () => {
+  return <div className="circle"></div>;
+};
+
+const Triangle = () => {
+  const numRows = 10; // Number of rows for the triangle
+  const triangleRows = [];
+
+  for (let i = 1; i <= numRows; i++) {
+    const row = [];
+    for (let j = 1; j <= i + 2; j++) {
+      row.push(<Circle key={j} />);
+    }
+    triangleRows.push(
+      <div key={i} className="row">
+        {row}
+      </div>
+    );
+  }
+
+  return <div className="triangle">{triangleRows}</div>;
+};
+
+export default Triangle;
+
+
